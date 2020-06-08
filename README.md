@@ -40,6 +40,27 @@ cd hello-world-app
 Finally, type npm start
 
 
+It is absolutely possible to run a React app without a production node server. That being said, developers may need to use a node dev server locally via npm start, as well as 
+using node to perform production builds via npm run build. But one can take the build output from npm run build and serve it from any static server and have a working react application.
+
+ // JavaScript ES5 function
+function getGreeting() {
+  return 'Welcome to JavaScript';
+}
+ 
+// JavaScript ES6 arrow function with body
+const getGreeting = () => {
+  return 'Welcome to JavaScript';
+}
+
+
+// JavaScript ES6 arrow function without body and implicit return
+const getGreeting = () => 'Welcome to JavaScript';
+
+Tutorial for javascript to get ready for React and ES6 ->  https://www.robinwieruch.de/javascript-fundamentals-react-requirements
+
+
+
 JSX — Allows us to write HTML like syntax which gets
 transformed to lightweightJavaScript objects.
 

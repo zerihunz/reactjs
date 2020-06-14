@@ -1,3 +1,6 @@
+https://github.com/the-road-to-learn-react/the-road-to-learn-react/tree/master/manuscript
+
+
 # reactjs
 ReactJS Tutorial
 
@@ -58,6 +61,73 @@ const getGreeting = () => {
 const getGreeting = () => 'Welcome to JavaScript';
 
 Tutorial for javascript to get ready for React and ES6 ->  https://www.robinwieruch.de/javascript-fundamentals-react-requirements
+
+
+
+Template literals are another JavaScript language specific feature that came with JavaScript ES6. 
+It is worth to mention it shortly, because when people new to JavaScript and React see them, they can be confusing as well. 
+When learning JavaScript, it's the following syntax that you grow up with for concatenating a string:
+
+function getGreeting(what) {
+  return 'Welcome to ' + what;
+}
+ 
+const greeting = getGreeting('JavaScript');
+console.log(greeting);
+// Welcome to JavaScript
+
+Template literals can be used for the same which is called string interpolation:
+
+function getGreeting(what) {
+  return `Welcome to ${what}`;
+}
+
+You only have to use backticks and the ${} notation for inserting JavaScript primitives. 
+However, string literals are not only used for string interpolation, but also for multiline strings in JavaScript:
+
+function getGreeting(what) {
+  return `
+    Welcome
+    to
+    ${what}
+  `;
+}
+Basically that's how larger text blocks can be formatted on multiple lines.
+
+Template Literals are a new ES2015 / ES6 feature that allows you to work with strings in a novel way compared to ES5 and below.
+
+The syntax at a first glance is very simple, just use backticks instead of single or double quotes:
+
+const a_string = `something`
+
+advantages:
+-they offer a great syntax to define multiline strings
+-they provide an easy way to interpolate variables and expressions in strings
+-they allow you to create DSLs with template tags (DSL means domain specific language, and it’s for example used in React by Styled Components, to define CSS for a component)
+
+https://flaviocopes.com/javascript-template-literals/
+
+Template literals provide an easy way to interpolate variables and expressions into strings.
+
+You do so by using the ${...} syntax:
+
+const myVariable = 'test'
+const string = `something ${myVariable}` //something test
+inside the ${} you can add anything, even expressions:
+
+const string = `something ${1 + 2 + 3}`
+const string2 = `something ${doSomething() ? 'x' : 'y'}`
+
+
+https://www.robinwieruch.de/npm-crash-course
+Set up a throw away npm project using the terminal:
+	Create a new folder with mkdir <folder_name>
+	Navigate into the folder with cd <folder_name>
+	Execute npm init -y or npm init
+	Install a local package like React with npm install react
+	Check the package.json file and the node_modules/ folder
+	Attempt to uninstall and reinstall the react node package
+
 
 
 
